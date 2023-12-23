@@ -21,7 +21,7 @@ Check out the live version of my portfolio [here](#).
 
 ## 🌈 How to Run Locally
 
-- **Clone the repo**: git clone https://github.com/your-username/your-portfolio.git
+- **Clone the repo**: git clone https://github.com/YOLO-GIT/My-First-Portfolio.git
 - Open index.html in your preferred web browser.
 
 ## 🤝 Contributing
