@@ -5,13 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="custom-css.css">
+    <!-- custom css -->
+    <link rel="stylesheet" href="custom_css.css">
     <!-- Animation -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <!-- AOS -->
-    <script>
-        document.documentElement.classList.add('js')
-    </script>
+    <script>document.documentElement.classList.add('js')</script>
+    <!-- Icon -->
+    
     <title>My Web || Portfolio</title>
 </head>
 
@@ -73,13 +74,13 @@
         </div>
     </nav>
 
-    <!-- Intro -->
-    <div class="delay-[300ms] duration-[600ms] taos:translate-x-[-200px] taos:opacity-0" data-taos-offset="400">
-        <header class="bg-gradient-to-r from-green-500 to-blue-500 text-white text-center py-8">
+    <!-- Intro 1 -->
+    <div>
+        <header class="bg-gradient-to-r from-green-500 to-blue-500 text-white text-center py-8 background-animate">
             <!-- Contents -->
             <div class="max-w-2xl mx-auto">
-                <h1 class="text-4xl font-bold mb-4">Sufi/@YOLO-GIT</h1>
-                <p class="text-lg mb-8">Web Developer</p>
+                <h1 class="text-4xl font-bold mb-4 animate__animated animate__fadeInUp">Sufi/@YOLO-GIT</h1>
+                <p class="text-lg mb-8 animate__animated animate__fadeInUp">Web Developer</p>
                 <p class="text-lg text-gray-200">
                     Welcome to my portfolio! I'm a passionate web developer with expertise in creating modern and
                     interactive
@@ -96,57 +97,28 @@
         </header>
     </div>
 
-    <div class="delay-[300ms] duration-[600ms] taos:translate-y-[200px] taos:opacity-0" data-taos-offset="300">
-        <!-- <section id="about" class="py-16">
-            <div class="max-w-2xl mx-auto">
-                <h2 class="text-3xl font-bold text-center mb-8">About Me</h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <div>
-                        <img src="../assets/Sufi.jpg" alt="picture"
-                            class="w-full h-auto rounded-lg transform transition-transform hover:scale-105 mb-4 hover:shadow-2xl">
-                    </div>
-                    <div class="text-gray-800">
-                        <p class="text-lg mb-4">
-                            Hi there! I'm Sufi, a dedicated web developer based in Malaysia. My journey in web
-                            development started with a strong passion for creating meaningful and user-friendly digital
-                            experiences.
-                        </p>
-                        <p class="text-lg mb-4">
-                            With expertise in both front-end and back-end technologies, I enjoy turning ideas into
-                            reality.
-                            I
-                            have a keen eye for design and a commitment to writing clean, efficient, and maintainable
-                            code.
-                        </p>
-                        <p class="text-lg">
-                            When I'm not coding, you can find me exploring new technologies, attending tech meetups, or
-                            enjoying a good cup of coffee while working on personal projects.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section> -->
-
+    <!-- Intro 2 -->
+    <div class="delay-[1000ms] duration-[1000ms] taos:translate-y-[200px] taos:opacity-0" data-taos-offset="300">
         <section class="bg-white dark:bg-gray-900">
             <div class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
                 <div class="font-light text-gray-500 sm:text-lg dark:text-gray-400">
                     <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Hello
                         Everybody!</h2>
-                    <p class="mb-4"> Hi there! I'm Sufi, a dedicated web developer based in Malaysia. My journey in web
+                    <p class="mb-4 font-semibold"> Hi there! I'm Sufi, a dedicated web developer based in Malaysia. My journey in web
                         development started with a strong passion for creating meaningful and user-friendly digital
                         experiences.</p>
-                    <p class="mb-4"> With expertise in both front-end and back-end technologies, I enjoy turning ideas
+                    <p class="mb-4 font-semibold"> With expertise in both front-end and back-end technologies, I enjoy turning ideas
                         into
                         reality. I have a keen eye for design and a commitment to writing clean, efficient, and
                         maintainable
                         code.</p>
-                    <p> When I'm not coding, you can find me exploring new technologies, attending tech meetups, or
+                    <p class="font-semibold"> When I'm not coding, you can find me exploring new technologies, attending tech meetups, or
                         enjoying a good cup of coffee while working on personal projects.</p>
                 </div>
                 <div class="grid grid-cols-2 gap-4 mt-8">
-                    <img class="w-full rounded-lg transform transition-transform hover:scale-105"
+                    <img class="w-full rounded-lg transform transition-transform hover:scale-105 transition-all ease-in-out duration-500 hover:shadow-lg"
                         src="../assets/Sufi.jpg" alt="office content 1">
-                    <img class="mt-4 w-full lg:mt-10 rounded-lg transform transition-transform hover:scale-105"
+                    <img class="mt-4 w-full lg:mt-10 rounded-lg transform transition-transform hover:scale-105 transition-all ease-in-out duration-500 hover:shadow-lg"
                         src="../assets/IMG_7561.JPG" alt="office content 2">
                 </div>
             </div>
@@ -154,15 +126,16 @@
     </div>
 
     <!-- Projects -->
-    <div class="delay-[300ms] duration-[600ms] taos:scale-[0.6] taos:opacity-0" data-taos-offset="400">
+    <div class="delay-[1000ms] duration-[1000ms] taos:scale-[0.6] taos:opacity-0" data-taos-offset="400">
         <section id="projects" class="py-16 bg-gray-100">
             <div class="max-w-6xl mx-auto">
-                <h2 class="text-3xl font-bold text-center mb-8">Projects</h2>
+                <h2 class="text-5xl font-bold italic underline text-center mb-8">Projects</h2>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     <!-- Project 1 -->
-                    <div class="mb-8 transform transition-transform hover:scale-105">
-                        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg">
+                    <div
+                        class="mb-8 transform transition-transform hover:scale-105 transition-all ease-in-out duration-500 hover:shadow-lg">
+                        <div class="bg-white p-6 rounded-lg shadow-md">
                             <h3 class="text-xl font-semibold mb-2">Project 1</h3>
                             <p class="text-gray-700 mb-4">Description of Project 1.</p>
                             <a href="#" class="text-blue-500 hover:underline">Learn more</a>
@@ -170,8 +143,9 @@
                     </div>
 
                     <!-- Project 2 -->
-                    <div class="mb-8 transform transition-transform hover:scale-105">
-                        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg">
+                    <div
+                        class="mb-8 transform transition-transform hover:scale-105 transition-all ease-in-out duration-500 hover:shadow-lg">
+                        <div class="bg-white p-6 rounded-lg shadow-md">
                             <h3 class="text-xl font-semibold mb-2">Project 2</h3>
                             <p class="text-gray-700 mb-4">Description of Project 2.</p>
                             <a href="#" class="text-blue-500 hover:underline">Learn more</a>
@@ -179,22 +153,21 @@
                     </div>
 
                     <!-- Placeholder for Project 3 -->
-                    <div class="mb-8 transform transition-transform hover:scale-105">
-                        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg">
+                    <div
+                        class="mb-8 transform transition-transform hover:scale-105 transition-all ease-in-out duration-500 hover:shadow-lg">
+                        <div class="bg-white p-6 rounded-lg shadow-md">
                             <h3 class="text-xl font-semibold mb-2">Project 3</h3>
                             <p class="text-gray-700 mb-4">Description of Project 3.</p>
                             <a href="#" class="text-blue-500 hover:underline">Learn more</a>
                         </div>
                     </div>
-
-                    <!-- Add more projects as needed -->
                 </div>
             </div>
         </section>
     </div>
 
     <!-- Videos -->
-    <div class="delay-[300ms] duration-[600ms] taos:translate-x-[-100%] taos:invisible" data-taos-offset="400">
+    <div class="delay-[1000ms] duration-[1000ms] taos:translate-x-[-100%] taos:invisible" data-taos-offset="400">
         <section class="bg-white dark:bg-gray-900">
             <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 grid lg:grid-cols-2 gap-8 lg:gap-16">
                 <div class="flex flex-col justify-center">
@@ -218,19 +191,22 @@
                     </div>
                 </div>
                 <!-- Change Later -->
-                <div>
+                <div
+                    class="transform transition-transform hover:scale-105 transition-all ease-in-out duration-500 hover:shadow-lg">
                     <img src="../assets/yolo.gif">
                 </div>
             </div>
         </section>
     </div>
 
-    <div class="delay-[300ms] duration-[600ms] taos:translate-x-[100%] taos:invisible" data-taos-offset="400">
+    <div>
         <!-- Contact Us -->
-        <section id="contact" class="py-16 bg-gradient-to-r from-green-500 to-blue-500 text-white">
+        <section id="contact" class="py-16 bg-gradient-to-r from-green-500 to-blue-500 text-white background-animate">
             <div class="max-w-6xl mx-auto">
 
-                <h2 class="text-3xl font-bold text-center mb-8">Contact Me</h2>
+                <div class="text-5xl text-center font-bold italic mb-8 line word fancy" id="channel-link">
+                    <h2 class="uppercase">Socials</h2>
+                </div>
 
                 <p class="text-lg text-center mb-8 text-white">
                     Feel free to reach out! You can contact me at
@@ -300,64 +276,7 @@
         </section>
     </div>
 
-
-    <!-- Views -->
-    <section class="bg-white dark:bg-gray-900">
-        <div class="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6">
-            <dl class="grid max-w-screen-md gap-8 mx-auto text-gray-900 sm:grid-cols-3 dark:text-white">
-                <div class="flex flex-col items-center justify-center">
-                    <dt id="count1" class="mb-2 text-3xl md:text-4xl font-extrabold">0</dt>
-                    <dd class="font-light text-gray-500 dark:text-gray-400">developers</dd>
-                </div>
-                <div class="flex flex-col items-center justify-center">
-                    <dt id="count2" class="mb-2 text-3xl md:text-4xl font-extrabold">0</dt>
-                    <dd class="font-light text-gray-500 dark:text-gray-400">contributors</dd>
-                </div>
-                <div class="flex flex-col items-center justify-center">
-                    <dt id="count3" class="mb-2 text-3xl md:text-4xl font-extrabold">0</dt>
-                    <dd class="font-light text-gray-500 dark:text-gray-400">organizations</dd>
-                </div>
-            </dl>
-        </div>
-
-        <script>
-            // Function to animate counting from 0 to a specified number
-            function animateCounting(element, target, duration) {
-                const start = 0;
-                const increment = target / (duration / 16); // Assuming 60 frames per second
-
-                let current = start;
-                const updateCount = () => {
-                    current += increment;
-                    element.textContent = Math.round(current);
-
-                    if (current < target) {
-                        requestAnimationFrame(updateCount);
-                    } else {
-                        element.textContent = target;
-                    }
-                };
-
-                updateCount();
-            }
-
-            // Trigger counting animations when the section is in the viewport
-            const section = document.querySelector(".max-w-screen-xl");
-            const sectionPosition = section.offsetTop;
-
-            window.addEventListener("scroll", () => {
-                if (window.pageYOffset > sectionPosition - window.innerHeight) {
-                    animateCounting(document.getElementById("count1"), 67, 2000);
-                    animateCounting(document.getElementById("count2"), 350, 2000);
-                    animateCounting(document.getElementById("count3"), 56, 2000);
-                    window.removeEventListener("scroll", animateCounting);
-                }
-            });
-        </script>
-    </section>
-
     <!-- Footer -->
-
     <footer class="bg-gray-800 text-white py-8">
         <div class="max-w-6xl mx-auto flex items-center justify-between">
             <div>
@@ -407,8 +326,10 @@
         </div>
     </footer>
 
+
     <!-- AOS -->
     <script src="https://unpkg.com/taos@1.0.5/dist/taos.js"></script>
+    <script src="../config/custom_js.js"></script>
 </body>
 
 </html>
