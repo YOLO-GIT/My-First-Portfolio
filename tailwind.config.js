@@ -9,7 +9,8 @@ module.exports = {
     extend: {},
   },
   plugins: [
-    require('taos/plugin')
+    require('taos/plugin'),
+    require('tailwind-animatecss'),
   ],
    safelist: [
     '!duration-[0ms]',
