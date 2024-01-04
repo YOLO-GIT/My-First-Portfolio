@@ -3,7 +3,7 @@ module.exports = {
   content: {
     relative: true,
     transform: (content) => content.replace(/taos:/g, ''),
-    files: ['./dist/*.{html,js}'],
+    files: ['./dist/*.{html,js}', 'node_modules/preline/dist/*.js'],
   },
   theme: {
     extend: {},
@@ -11,11 +11,12 @@ module.exports = {
   plugins: [
     require('taos/plugin'),
     require('tailwind-animatecss'),
+    require('@tailwindcss/forms'),
+    require('preline/plugin'),
   ],
-   safelist: [
+  safelist: [
     '!duration-[0ms]',
     '!delay-[0ms]',
     'html.js :where([class*="taos:"]:not(.taos-init))'
   ]
 }
-
