@@ -160,3 +160,7 @@ body::-webkit-scrollbar {
 .block:after {
 	filter: blur(50px);
 }
+
+.custom-header{
+  z-index: 9999;
+}

@@ -21,62 +21,65 @@
 <body class="bg-gray-100">
 
     <!-- Navigation Bar -->
-    <nav class="bg-white border-gray-200 dark:bg-gray-900">
-        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-            <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
-                <img src="../assets/memecraft.gif" class="h-8" alt="Flowbite Logo" />
-                <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">YOLO-GIT</span>
-            </a>
-            <button type="button" class="hs-collapse-toggle inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500
+    <header class="bg-white fixed top-0 w-full shadow-md custom-header">
+        <nav class="bg-white border-gray-200 dark:bg-gray-900">
+            <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+                <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
+                    <img src="../assets/memecraft.gif" class="h-8" alt="Flowbite Logo" />
+                    <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">YOLO-GIT</span>
+                </a>
+                <button type="button" class="hs-collapse-toggle inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500
                 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200
                 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default"
-                aria-expanded="false" id="hs-unstyled-collapse" data-hs-collapse="#hs-unstyled-collapse-heading">
-                <span class="sr-only">Open main menu</span>
-                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
-                    viewBox="0 0 17 14">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M1 1h15M1 7h15M1 13h15" />
-                </svg>
-            </button>
-            <div class="hs-collapse hidden w-full md:block md:w-auto" id="hs-unstyled-collapse-heading">
-                <ul
-                    class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-                    <li>
-                        <a href="#account-about"
-                            class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500"
-                            aria-current="page">
-                            About Me
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#account-skills"
-                            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
-                            Skills
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#account-projects"
-                            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
-                            Projects
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#account-contacts"
-                            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
-                            Contact
-                        </a>
-                    </li>
-                </ul>
+                    aria-expanded="false" id="hs-unstyled-collapse" data-hs-collapse="#hs-unstyled-collapse-heading">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 17 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M1 1h15M1 7h15M1 13h15" />
+                    </svg>
+                </button>
+                <div class="hs-collapse hidden w-full md:block md:w-auto" id="hs-unstyled-collapse-heading">
+                    <ul
+                        class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                        <li>
+                            <a href="#account-about" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent
+                                md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500
+                                dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
+                                About Me
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#account-skills"
+                                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
+                                Skills
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#account-projects"
+                                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
+                                Projects
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#account-contacts"
+                                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
+                                Contact
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
+
 
     <!-- Intro 1 -->
     <div>
         <header class="bg-gradient-to-r from-green-500 to-blue-500 text-white text-center py-8 background-animate">
             <!-- Contents -->
             <div class="max-w-2xl mx-auto">
-                <h1 class="text-4xl font-bold mb-4 animate__animated animate__fadeInUp">Sufi/@YOLO-GIT</h1>
+                <h1 class="text-4xl font-bold mb-4 mt-12 animate__animated animate__fadeInUp">Sufi/@YOLO-GIT</h1>
                 <p class="text-lg mb-8 animate__animated animate__fadeInUp">Web Developer</p>
                 <p class="text-md sm:text-lg text-gray-200 px-2">
                     Welcome to my portfolio! I'm a passionate web developer with expertise in creating modern and
@@ -95,165 +98,151 @@
     </div>
 
     <!-- Intro 2 -->
-    <div class="delay-[800ms] duration-[1200ms] taos:translate-y-[200px] taos:opacity-0" data-taos-offset="300"
-        id="account-about">
-        <section class="bg-white dark:bg-gray-900">
-            <div class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
-                <div class="font-light text-gray-500 sm:text-lg dark:text-gray-400">
-                    <h2
-                        class="mb-4 text-2xl text-center sm:text-left sm:text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
-                        Hello
-                        Everybody!</h2>
-                    <p class="mb-4 font-semibold"> Hi there! I'm Sufi, a dedicated web developer based in Malaysia. My
-                        journey in web
-                        development started with a strong passion for creating meaningful and user-friendly digital
-                        experiences.</p>
-                    <p class="mb-4 font-semibold"> With expertise in both front-end and back-end technologies, I enjoy
-                        turning ideas
-                        into
-                        reality. I have a keen eye for design and a commitment to writing clean, efficient, and
-                        maintainable
-                        code.</p>
-                    <p class="font-semibold"> When I'm not coding, you can find me exploring new technologies, attending
-                        tech meetups, or
-                        enjoying a good cup of coffee while working on personal projects.</p>
+    <div id="account-about">
+        <div class="delay-[800ms] duration-[1200ms] taos:translate-y-[200px] taos:opacity-0" data-taos-offset="300">
+            <section class="bg-white dark:bg-gray-900">
+                <div
+                    class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
+                    <div class="font-light text-gray-500 sm:text-lg dark:text-gray-400">
+                        <h2
+                            class="mb-4 text-2xl text-center sm:text-left sm:text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
+                            Hello
+                            Everybody!</h2>
+                        <p class="mb-4 font-semibold"> Hi there! I'm Sufi, a dedicated web developer based in Malaysia.
+                            My
+                            journey in web
+                            development started with a strong passion for creating meaningful and user-friendly digital
+                            experiences.</p>
+                        <p class="mb-4 font-semibold"> With expertise in both front-end and back-end technologies, I
+                            enjoy
+                            turning ideas
+                            into
+                            reality. I have a keen eye for design and a commitment to writing clean, efficient, and
+                            maintainable
+                            code.</p>
+                        <p class="font-semibold"> When I'm not coding, you can find me exploring new technologies,
+                            attending
+                            tech meetups, or
+                            enjoying a good cup of coffee while working on personal projects.</p>
+                    </div>
+                    <div class="grid grid-cols-2 gap-4 mt-8">
+                        <img class="w-full rounded-lg transform transition-transform hover:scale-105 transition-all ease-in-out duration-500 hover:shadow-lg"
+                            src="../assets/Sufi.jpg" alt="office content 1">
+                        <img class="mt-4 w-full lg:mt-10 rounded-lg transform transition-transform hover:scale-105 transition-all ease-in-out duration-500 hover:shadow-lg"
+                            src="../assets/IMG_7561.JPG" alt="office content 2">
+                    </div>
                 </div>
-                <div class="grid grid-cols-2 gap-4 mt-8">
-                    <img class="w-full rounded-lg transform transition-transform hover:scale-105 transition-all ease-in-out duration-500 hover:shadow-lg"
-                        src="../assets/Sufi.jpg" alt="office content 1">
-                    <img class="mt-4 w-full lg:mt-10 rounded-lg transform transition-transform hover:scale-105 transition-all ease-in-out duration-500 hover:shadow-lg"
-                        src="../assets/IMG_7561.JPG" alt="office content 2">
+            </section>
+        </div>
+
+        <!-- Skills -->
+        <div id="account-skills">
+            <section class="bg-gray-900 dark:bg-white">
+                <div
+                    class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
+                    <div class="font-light text-gray-500 sm:text-lg dark:text-gray-400">
+                        <h2 class="mb-4 text-2xl text-center sm:text-left sm:text-4xl tracking-tight font-extrabold
+                        text-white dark:text-gray-900">
+                            Skill</h2>
+                        <p class="mb-4 font-semibold text-white dark:text-gray-900"> I am a solo developer passionate
+                            about
+                            creating things I genuinely
+                            like. For my skills, I still
+                            searching, but I
+                            mostly make some mini projects to sharpen my skills.</p>
+                        <p class="mb-4 font-semibold text-white dark:text-gray-900">Such as: Web Development, Game
+                            Development and Machine Learning (Still
+                            In Progress)</p>
+                        <p class="font-semibold text-white dark:text-gray-900"> And... Many more. But, I mostly prefer
+                            in
+                            web dev category. And, I tend to
+                            want to learn more
+                            all about coding.</p>
+                    </div>
+                    <div class="grid gap-4 mt-8">
+                        <img class="w-full rounded-lg transform transition-transform hover:scale-105 transition-all ease-in-out duration-500 hover:shadow-lg"
+                            src="../assets/web.png" alt="web dev">
+                        <img class="mt-4 w-full lg:mt-10 rounded-lg transform transition-transform hover:scale-105 transition-all ease-in-out duration-500 hover:shadow-lg"
+                            src="../assets/Screenshot 2024-01-08 015525.png" alt="machine learning">
+                    </div>
                 </div>
-            </div>
-        </section>
-    </div>
-
-    <!-- Skills -->
-    <div class="delay-[1200ms] duration-[1600ms] taos:translate-y-[200px] taos:opacity-0" data-taos-offset="300"
-        id="account-skills">
-        <section class="bg-white dark:bg-gray-900">
-            <div class="flex justify-between px-4 mx-auto max-w-screen-xl text-center sm:text-left">
-                <article
-                    class="mx-auto md:w-1/2 max-w-2xl format format-sm sm:format-base lg:format-lg format-blue dark:format-invert">
-                    <h1 class="text-3xl font-bold mb-4 text-gray-800 dark:text-gray-200">About Me</h1>
-                    <p class="mb-4 leading-6 text-gray-600 dark:text-gray-300">
-                        I am a solo developer passionate about creating things I genuinely like. For my skills, I still
-                        searching, but I
-                        mostly make some mini projects to sharpen my skills.
-                    </p>
-
-                    <p class="mb-4 leading-6 text-gray-600 dark:text-gray-300">
-                        <strong>Web Dev</strong>
-                        <figure><img
-                                class="w-full rounded-lg transform transition-transform hover:scale-105 transition-all ease-in-out duration-500 hover:shadow-lg"
-                                src="https://images.wondershare.com/mockitt/examples/slack.jpg" alt="">
-                        </figure>
-                    </p>
-
-                    <p class="mb-4 mt-4 leading-6 text-gray-600 dark:text-gray-300">
-                        <strong>Game Development</strong>
-                        <figure><img class="w-full rounded-lg transform transition-transform hover:scale-105 transition-all
-                        ease-in-out duration-500 hover:shadow-lg"
-                                src="https://r2j4y6x9.map2.ssl.hwcdn.net/wp-content/uploads/2018/12/More-Game-Design-Examples.png"
-                                alt="">
-                        </figure>
-                    </p>
-
-                    <p class="mb-4 mt-4 leading-6 text-gray-600 dark:text-gray-300">
-                        <strong>Machine Learning (Still In Progress)</strong>
-                        <figure><img class="w-full rounded-lg transform transition-transform hover:scale-105 transition-all
-                        ease-in-out duration-500 hover:shadow-lg"
-                                src="https://image.isu.pub/161208053327-0ff40e38572598a1855201607c392708/jpg/page_1.jpg"
-                                alt="">
-                        </figure>
-                    </p>
-
-                    <p class="mb-4 mt-4 leading-6 text-gray-600 text-xl dark:text-gray-300">
-                        And... Many more. But, I mostly prefer in web dev category. And, I tend to want to learn more
-                        all about coding.
-                    </p>
-
-                    <p class="mt-4 leading-6 text-gray-600 text-xl dark:text-gray-300">
-                        Feel free to comment or check my works on my github and socials 😎👌
-                    </p>
-                </article>
-            </div>
-        </section>
+            </section>
+        </div>
     </div>
 
     <!-- Projects -->
-    <div class="delay-[1600ms] duration-[2000ms] taos:scale-[0.6] taos:opacity-0" data-taos-offset="400"
-        id="account-projects">
-        <section id="projects" class="py-16 bg-gray-100">
-            <div class="max-w-6xl mx-auto">
-                <h2 class="text-5xl font-bold italic underline text-center mb-8">Projects</h2>
+    <div id="account-projects">
+        <div class="delay-[1600ms] duration-[2000ms] taos:scale-[0.6] taos:opacity-0" data-taos-offset="400">
+            <section id="projects" class="py-16 bg-gray-100">
+                <div class="max-w-6xl mx-auto">
+                    <h2 class="text-5xl font-bold italic underline text-center mb-8">Projects</h2>
 
-                <div class="grid grid-cols-1 gap-3 md:grid-cols-2 md:gap-8 lg:grid-cols-3 ">
-                    <!-- Project 1 -->
-                    <div
-                        class="mb-8 transform transition-transform hover:scale-105 transition-all ease-in-out duration-500 hover:shadow-lg">
-                        <div class="bg-white p-6 rounded-lg shadow-md">
-                            <h3 class="text-xl font-semibold mb-2">Project 1</h3>
-                            <p class="text-gray-700 mb-4">Description of Project 1.</p>
-                            <a href="#" class="text-blue-500 hover:underline">Learn more</a>
+                    <div class="grid grid-cols-1 gap-3 md:grid-cols-2 md:gap-8 lg:grid-cols-3 ">
+                        <!-- Project 1 -->
+                        <div
+                            class="mb-8 transform transition-transform hover:scale-105 transition-all ease-in-out duration-500 hover:shadow-lg">
+                            <div class="bg-white p-6 rounded-lg shadow-md">
+                                <h3 class="text-xl font-semibold mb-2">Project 1</h3>
+                                <p class="text-gray-700 mb-4">Description of Project 1.</p>
+                                <a href="#" class="text-blue-500 hover:underline">Learn more</a>
+                            </div>
                         </div>
-                    </div>
 
-                    <!-- Project 2 -->
-                    <div
-                        class="mb-8 transform transition-transform hover:scale-105 transition-all ease-in-out duration-500 hover:shadow-lg">
-                        <div class="bg-white p-6 rounded-lg shadow-md">
-                            <h3 class="text-xl font-semibold mb-2">Project 2</h3>
-                            <p class="text-gray-700 mb-4">Description of Project 2.</p>
-                            <a href="#" class="text-blue-500 hover:underline">Learn more</a>
+                        <!-- Project 2 -->
+                        <div
+                            class="mb-8 transform transition-transform hover:scale-105 transition-all ease-in-out duration-500 hover:shadow-lg">
+                            <div class="bg-white p-6 rounded-lg shadow-md">
+                                <h3 class="text-xl font-semibold mb-2">Project 2</h3>
+                                <p class="text-gray-700 mb-4">Description of Project 2.</p>
+                                <a href="#" class="text-blue-500 hover:underline">Learn more</a>
+                            </div>
                         </div>
-                    </div>
 
-                    <!-- Placeholder for Project 3 -->
-                    <div
-                        class="mb-8 transform transition-transform hover:scale-105 transition-all ease-in-out duration-500 hover:shadow-lg">
-                        <div class="bg-white p-6 rounded-lg shadow-md">
-                            <h3 class="text-xl font-semibold mb-2">Project 3</h3>
-                            <p class="text-gray-700 mb-4">Description of Project 3.</p>
-                            <a href="#" class="text-blue-500 hover:underline">Learn more</a>
+                        <!-- Placeholder for Project 3 -->
+                        <div
+                            class="mb-8 transform transition-transform hover:scale-105 transition-all ease-in-out duration-500 hover:shadow-lg">
+                            <div class="bg-white p-6 rounded-lg shadow-md">
+                                <h3 class="text-xl font-semibold mb-2">Project 3</h3>
+                                <p class="text-gray-700 mb-4">Description of Project 3.</p>
+                                <a href="#" class="text-blue-500 hover:underline">Learn more</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-    </div>
+            </section>
 
-    <!-- Videos -->
-    <div class="delay-[2000ms] duration-[2400ms] taos:translate-x-[-100%] taos:invisible" data-taos-offset="400">
-        <section class="bg-white dark:bg-gray-900">
-            <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 grid lg:grid-cols-2 gap-8 lg:gap-16">
-                <div class="flex flex-col justify-center">
-                    <h1
-                        class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
-                        One of my inspirational projects</h1>
-                    <p class="mb-8 mt-2 text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400">
-                        My last projects that I had done with my teams to create an inspirational videos about every
-                        day
-                        life.</p>
-                    <div class="flex flex-col space-y-4 sm:flex-row sm:space-y-0">
-                        <a href="#"
-                            class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
-                            Youtube
-                            <svg class="w-3.5 h-3.5 ms-2 rtl:rotate-180" xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
-                                <path
-                                    d="M4.5 4.5a3 3 0 0 0-3 3v9a3 3 0 0 0 3 3h8.25a3 3 0 0 0 3-3v-9a3 3 0 0 0-3-3H4.5ZM19.94 18.75l-2.69-2.69V7.94l2.69-2.69c.944-.945 2.56-.276 2.56 1.06v11.38c0 1.336-1.616 2.005-2.56 1.06Z" />
-                            </svg>
-                        </a>
+            <!-- Videos -->
+            <section class="bg-white dark:bg-gray-900">
+                <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 grid lg:grid-cols-2 gap-8 lg:gap-16">
+                    <div class="flex flex-col justify-center">
+                        <h1
+                            class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
+                            One of my inspirational projects</h1>
+                        <p class="mb-8 mt-2 text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400">
+                            My last projects that I had done with my teams to create an inspirational videos about
+                            every
+                            day
+                            life.</p>
+                        <div class="flex flex-col space-y-4 sm:flex-row sm:space-y-0">
+                            <a href="#"
+                                class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
+                                Youtube
+                                <svg class="w-3.5 h-3.5 ms-2 rtl:rotate-180" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                                    <path
+                                        d="M4.5 4.5a3 3 0 0 0-3 3v9a3 3 0 0 0 3 3h8.25a3 3 0 0 0 3-3v-9a3 3 0 0 0-3-3H4.5ZM19.94 18.75l-2.69-2.69V7.94l2.69-2.69c.944-.945 2.56-.276 2.56 1.06v11.38c0 1.336-1.616 2.005-2.56 1.06Z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Change Later -->
+                    <div
+                        class="transform transition-transform hover:scale-105 transition-all ease-in-out duration-500 hover:shadow-lg">
+                        <img src="../assets/yolo.gif">
                     </div>
                 </div>
-                <!-- Change Later -->
-                <div
-                    class="transform transition-transform hover:scale-105 transition-all ease-in-out duration-500 hover:shadow-lg">
-                    <img src="../assets/yolo.gif">
-                </div>
-            </div>
-        </section>
+            </section>
+        </div>
     </div>
 
     <div id="account-contacts">
