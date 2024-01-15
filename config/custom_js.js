@@ -40,14 +40,29 @@ enhance("channel-link");
 var coll = document.getElementById("navbar-default");
 var i;
 
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function () {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.display === "block") {
-      content.style.display = "none";
-    } else {
-      content.style.display = "block";
-    }
-  });
+if (i != null && i.length < 1) {
+  for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function () {
+      this.classList.toggle("active");
+      var content = this.nextElementSibling;
+      if (content.style.display === "block") {
+        content.style.display = "none";
+      } else {
+        content.style.display = "block";
+      }
+    });
+  }
+}
+// When the user scrolls down 20px from the top of the document, slide down the navbar
+// When the user scrolls to the top of the page, slide up the navbar (50px out of the top view)
+window.onscroll = function () {
+  scrollFunction()
+};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-50px";
+  }
 }
