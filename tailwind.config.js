@@ -3,7 +3,7 @@ module.exports = {
   content: {
     relative: true,
     transform: (content) => content.replace(/taos:/g, ''),
-    files: ['./dist/*.{html,js}', 'node_modules/preline/dist/*.js'],
+    files: ['./*.{html,js}', 'node_modules/preline/dist/*.js'],
   },
   theme: {
     extend: {},
