@@ -4,22 +4,24 @@ body::-webkit-scrollbar {
 }
 
 .background-animate {
-    background-size: 400%;
+  background-size: 400%;
 
-    -webkit-animation: AnimationName 5s ease infinite;
-    -moz-animation: AnimationName 5s ease infinite;
-    animation: AnimationName 5s ease infinite;
+  -webkit-animation: AnimationName 5s ease infinite;
+  -moz-animation: AnimationName 5s ease infinite;
+  animation: AnimationName 5s ease infinite;
+}
+
+@keyframes AnimationName {
+
+  0%,
+  100% {
+    background-position: 0% 50%;
   }
 
-  @keyframes AnimationName {
-    0%,
-    100% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
+  50% {
+    background-position: 100% 50%;
   }
+}
 
 /* Word seperator */
 #text:has(.fancy:hover) .word:not(.fancy:hover) {
@@ -30,141 +32,148 @@ body::-webkit-scrollbar {
   display: inline-block;
 }
 
-.fancy > .outer {
+.fancy>.outer {
   transition: transform 350ms ease;
 }
 
-.fancy:hover > .outer {
+.fancy:hover>.outer {
   transition-duration: 800ms;
 }
 
 /* Before  */
 
-.fancy > .outer:nth-child(1) {
+.fancy>.outer:nth-child(1) {
   transform: translate(80%, -60%) rotate(8deg);
 }
 
-.fancy > .outer:nth-child(2) {
+.fancy>.outer:nth-child(2) {
   transform: translate(-40%, 20%) rotate(4deg);
 }
 
-.fancy > .outer:nth-child(3) {
+.fancy>.outer:nth-child(3) {
   transform: translate(-10%, 60%) rotate(-6deg);
 }
 
-.fancy > .outer:nth-child(4) {
+.fancy>.outer:nth-child(4) {
   transform: translate(0%, 8%) rotate(-8deg);
 }
 
-.fancy > .outer:nth-child(5) {
+.fancy>.outer:nth-child(5) {
   transform: translate(0%, -20%) rotate(5deg);
 }
 
-.fancy > .outer:nth-child(6) {
+.fancy>.outer:nth-child(6) {
   transform: translate(0%, 20%) rotate(-3deg);
 }
 
-.fancy > .outer:nth-child(7) {
+.fancy>.outer:nth-child(7) {
   transform: translate(0%, -40%) rotate(-5deg);
 }
 
-.fancy > .outer:nth-child(8) {
+.fancy>.outer:nth-child(8) {
   transform: translate(0%, 15%) rotate(10deg);
 }
 
-.fancy > .outer:nth-child(9) {
+.fancy>.outer:nth-child(9) {
   transform: translate(0%, -50%) rotate(8deg);
 }
 
-.fancy > .outer:nth-child(10) {
+.fancy>.outer:nth-child(10) {
   transform: translate(0%, 15%) rotate(-6deg);
 }
 
 /* After */
 
-.fancy:hover > .outer:nth-child(1) {
+.fancy:hover>.outer:nth-child(1) {
   transform: translate(0%, 0%);
 }
 
-.fancy:hover > .outer:nth-child(2) {
+.fancy:hover>.outer:nth-child(2) {
   transform: translate(0%, 0%);
 }
 
-.fancy:hover > .outer:nth-child(3) {
+.fancy:hover>.outer:nth-child(3) {
   transform: translate(0%, 0%);
 }
 
-.fancy:hover > .outer:nth-child(4) {
+.fancy:hover>.outer:nth-child(4) {
   transform: translate(0%, 0%);
 }
 
-.fancy:hover > .outer:nth-child(5) {
+.fancy:hover>.outer:nth-child(5) {
   transform: translate(0%, 0%);
 }
 
-.fancy:hover > .outer:nth-child(6) {
+.fancy:hover>.outer:nth-child(6) {
   transform: translate(0%, 0%);
 }
 
-.fancy:hover > .outer:nth-child(7) {
+.fancy:hover>.outer:nth-child(7) {
   transform: translate(0%, 0%);
 }
 
-.fancy:hover > .outer:nth-child(8) {
+.fancy:hover>.outer:nth-child(8) {
   transform: translate(0%, 0%);
 }
 
-.fancy:hover > .outer:nth-child(9) {
+.fancy:hover>.outer:nth-child(9) {
   transform: translate(0%, 0%);
 }
 
-.fancy:hover > .outer:nth-child(10) {
+.fancy:hover>.outer:nth-child(10) {
   transform: translate(0%, 0%);
 }
 
 /* Custom Border */
 
 .block {
-	position: relative;
-	/* margin: 300px auto 0; */
-	/* width: 500px;
+  position: relative;
+  /* margin: 300px auto 0; */
+  /* width: 500px;
 	height: 250px; */
-	/* background: linear-gradient(0deg, #000, #272727); */
+  /* background: linear-gradient(0deg, #000, #272727); */
 }
 
-.block:before, .block:after {
-	content: '';
-	position: absolute;
-	left: -2px;
-	top: -2px;
-	background: linear-gradient(45deg, #0000ff, #00ff00, #0000ff, #00ff00);
-	background-size: 400%;
-	width: calc(100% + 4px);
-	height: calc(100% + 4px);
-	z-index: -1;
-	animation: steam 20s linear infinite;
+.block:before,
+.block:after {
+  content: '';
+  position: absolute;
+  left: -2px;
+  top: -2px;
+  background: linear-gradient(45deg, #0000ff, #00ff00, #0000ff, #00ff00);
+  background-size: 400%;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  z-index: -1;
+  animation: steam 20s linear infinite;
 }
 
 @keyframes steam {
-	0% {
-		background-position: 0 0;
-	}
-	50% {
-		background-position: 400% 0;
-	}
-	100% {
-		background-position: 0 0;
-	}
+  0% {
+    background-position: 0 0;
+  }
+
+  50% {
+    background-position: 400% 0;
+  }
+
+  100% {
+    background-position: 0 0;
+  }
 }
 
 .block:after {
-	filter: blur(50px);
+  filter: blur(50px);
 }
 
 #navbar {
   z-index: 9999;
-  position: fixed; /* Make it stick/fixed */
-  top: -50px; /* Hide the navbar 50 px outside of the top view */
-  width: 100%; /* Full width */
-  transition: top 0.3s; /* Transition effect when sliding down (and up) */
+  position: fixed;
+  /* Make it stick/fixed */
+  top: -50px;
+  /* Hide the navbar 50 px outside of the top view */
+  width: 100%;
+  /* Full width */
+  transition: top 0.3s;
+  /* Transition effect when sliding down (and up) */
 }
