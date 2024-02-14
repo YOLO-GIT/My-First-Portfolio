@@ -66,3 +66,8 @@ function scrollFunction() {
     document.getElementById("navbar").style.top = "-50px";
   }
 }
+
+function toggleMenu() {
+  var navLinks = document.getElementById("navbar-default");
+  navLinks.classList.toggle("hidden");
+}
