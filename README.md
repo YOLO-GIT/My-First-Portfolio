@@ -1,3 +1,5 @@
+<p align="center"><img src="./assets/Kirbo.png"></p>
+
 # My Portfolio
 
 Welcome to my vibrant and interactive portfolio! 🚀
@@ -19,11 +21,6 @@ Check out the live version of my portfolio [here](https://yolo-git.github.io/My-
 - CSS3 (with Tailwind CSS)
 - JavaScript
 
-## 🌈 How to Run Locally
-
-- **Clone the repo**: git clone https://github.com/YOLO-GIT/My-First-Portfolio.git
-- Open index.html in your preferred web browser.
-
 ## 🤝 Contributing
 
 - If you have suggestions, improvements, or bug fixes, feel free to open an issue or submit a pull request!
@@ -40,6 +37,6 @@ Check out the live version of my portfolio [here](https://yolo-git.github.io/My-
 ├── tailwind.config.js   # Tailwind CSS configuration file
 ├── ...
 └── image/              # Directory for project assets (images, icons, etc.)
+```
 
-
-
+## <p align="center"><img src="name_template_latest.png"></p>
